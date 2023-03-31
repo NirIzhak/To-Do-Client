@@ -7,7 +7,7 @@ const TasksContextProvider = ({ children }) => {
 
   const LoadTasks = async () => {
     try {
-      let res = await fetch("http://localhost:8000/getTasks");
+      let res = await fetch("https://to-do-list-jxx9.onrender.com/getTasks");
       let data = await res.json();
       setTasks(data);
     } catch (err) {
@@ -17,7 +17,7 @@ const TasksContextProvider = ({ children }) => {
 
   const CreateTask = async (task) => {
     try {
-      await fetch("http://localhost:8000/createTask", {
+      await fetch("https://to-do-list-jxx9.onrender.com/createTask", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -34,7 +34,7 @@ const TasksContextProvider = ({ children }) => {
 
   const DeleteTask = async (id) => {
     try {
-      await fetch(`http://localhost:8000/deleteTask/${id}`, {
+      await fetch(`https://to-do-list-jxx9.onrender.com/deleteTask/${id}`, {
         method: "DELETE",
         headers: {
           Accept: "application/json",
