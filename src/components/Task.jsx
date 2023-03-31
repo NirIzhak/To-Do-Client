@@ -1,7 +1,5 @@
 import React, { useContext } from "react";
 import { TasksContext } from "../context/TasksContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -33,7 +31,7 @@ const Task = ({ name, date, _id, color }) => {
             notifyDelete();
           }}
         >
-          <FontAwesomeIcon icon={faTrash} />
+         X
         </button>
       </div>
     </div>
