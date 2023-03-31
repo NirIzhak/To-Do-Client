@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) {
+    .title {
+        margin-block: 1%;
+    }
+
+    .task-container {
+        margin-block: 1%;
+        width: 70%;
+    }
+
+    .input-area .color {
+        width: 30px;
+        height: 30px;
+    }
+
+    .task button:hover,
+    .input-area button:hover {
+        cursor: pointer;
+    }
+}

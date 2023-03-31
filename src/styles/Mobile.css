@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+body {
+    background-color: whitesmoke;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-block: 3%;
+}
+
+:root {
+    --toastify-font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3%;
+}
+
+.input-area button,
+.input-area input {
+    margin: 10px;
+    background-color: whitesmoke;
+    font-size: 1.1rem
+}
+
+.input-area .tName {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: #2862ce 2px solid;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    width: 45%;
+}
+
+.input-area button {
+    border: none;
+    background-color: white;
+    color: rgb(40, 98, 206);
+    background-color: #f5f5f5;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.input-area .color {
+    width: 20px;
+    height: 20px;
+}
+
+
+input[type=color]+div.sp-disabled {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input[type=color]+div.sp-disabled .sp-preview {
+    margin: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #999;
+}
+
+input[type=color]+div.sp-disabled .sp-dd {
+    display: none;
+}
+
+
+.input-area .tName:focus {
+    outline: none;
+}
+
+.tName {
+    border-radius: 0;
+}
+
+.tName[type="search"] {
+    -webkit-appearance: none;
+}
+
+.no-tasks {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.task-container {
+    border: 1px grey solid;
+    margin: auto;
+    margin-block: 5%;
+    width: 90%;
+    border-radius: 3px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px;
+    border-radius: 3px;
+
+}
+
+.task button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    margin-right: 5%;
+
+}
+
+.task .task-date {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.task .task-name {
+    font-size: 2rem;
+    margin-bottom: 3%;
+}
+
+.task .text {
+    margin-left: 5%;
+}
